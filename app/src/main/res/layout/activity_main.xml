@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manga"
+        android:textColor="@color/white"
+        android:fontFamily="serif-monospace"
+        android:textSize="25dp"
+        android:layout_margin="20dp"
+        android:textStyle="bold" />
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Manga"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:fontFamily="serif-monospace"
+        android:layout_margin="20dp"
+        android:padding="12dp"
+        android:background="@drawable/edit_search_background" />
+
+    <!-- Category filter with RadioButtons -->
+    <RadioGroup
+        android:id="@+id/category_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <RadioButton
+            android:id="@+id/radio_popular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main"
+            android:layout_weight="1"
+            android:buttonTint="@drawable/custom_radio_button"
+            android:text="Popular" />
+
+        <RadioButton
+            android:id="@+id/radio_trending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main"
+            android:buttonTint="@drawable/custom_radio_button"
+            android:text="Trending" />
+    </RadioGroup>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/swipe_refresh">
+
+        <!-- RecyclerView for Manga Items -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:padding="8dp" />
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:itemIconTint="@color/main"
+        app:menu="@menu/bottom_navigation_menu"/>
+
+
+
+
+</LinearLayout>

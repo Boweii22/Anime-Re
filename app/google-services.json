@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "737391985212",
+    "project_id": "manga2-8ae8b",
+    "storage_bucket": "manga2-8ae8b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737391985212:android:ee282f9c5f5f3a2810f939",
+        "android_client_info": {
+          "package_name": "com.smartherd.manga2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjcrTmdHsa4tVLF6jrB6AyXSz1wgY3M-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

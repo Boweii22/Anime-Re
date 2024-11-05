@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="4dp"
+    android:gravity="center">
+
+    <!-- Manga Cover Image -->
+    <ImageView
+        android:id="@+id/manga_image"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center" />
+
+    <!-- Manga Title -->
+    <TextView
+        android:id="@+id/manga_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white" />
+</LinearLayout>

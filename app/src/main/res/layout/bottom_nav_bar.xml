@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:padding="16dp"
+    android:background="@drawable/neumorphic_shadow"
+    android:elevation="4dp"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/button_home"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/neumorphic_background"
+        android:textColor="@color/text_color"
+        android:padding="12dp"
+        android:src="@drawable/ic_home" /> <!-- Replace with your icon -->
+
+    <ImageView
+        android:id="@+id/button_search"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/neumorphic_background"
+        android:textColor="@color/text_color"
+        android:padding="12dp"
+        android:src="@drawable/ic_search" /> <!-- Replace with your icon -->
+
+    <ImageView
+        android:id="@+id/button_profile"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/neumorphic_background"
+        android:textColor="@color/text_color"
+        android:padding="12dp"
+        android:src="@drawable/ic_profile" /> <!-- Replace with your icon -->
+
+</LinearLayout>
