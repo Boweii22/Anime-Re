@@ -120,5 +120,3 @@ This is a Manga Android application that allows users to explore, bookmark, and 
 - **Notifications**: Notify users of new manga releases or updates in their bookmarked manga.
 
 ---
-
-This README should guide users and developers in setting up, running, and contributing to your Manga app project. Adjust sections or add details as your app evolves!
